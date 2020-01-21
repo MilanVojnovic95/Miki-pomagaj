@@ -1,0 +1,500 @@
+/* -------------------------*/
+/* BASIC SETUP*/
+/* ------------------------------*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* -------------------------*/
+/* REUSABLE COMPONENTS*/
+/* ------------------------------*/
+
+.row {
+    max-width: 1148px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0px;
+
+}
+
+.box {
+    padding: 0%;
+}
+
+/* ------ HEADINGS ------ */
+h1 {
+    
+    margin: 0;
+    color:#414141;
+    font-size: 320%;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 35px;
+    color: #414141;
+    font-size: 100%;
+    font-weight: 150;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+
+}
+
+h3 {
+    position: absolute;
+    font-family: serif;
+    margin-top: 43px;
+    margin-left: 0px;
+    color:#414141;
+    font-size: 300%;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+
+
+
+
+
+h4 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color:white;
+    font-size: 100%;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+h4::after {
+    
+    height: 2px;
+    background-color:#E2A83C ;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    content: " ";
+    width: 160px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+h5 {
+   margin-top: -50px;
+   text-align: center;
+   color:#414141;
+   font-size: 120%;
+   font-weight: bold;
+   text-transform: uppercase;
+   letter-spacing: 0px;
+   word-spacing: 2px;
+   
+}
+
+
+/*-------PARAGRAPH-------- */
+
+ .long-copy {
+    
+    color: #414141;
+    line-height: 145%;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 125px;
+    text-align: left;
+    
+    
+
+ }
+
+p {
+
+}
+
+
+
+
+/* ------ BUTTONS ------ */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: background-color 0.2s, borde 0.2s, color 0.2s;
+}
+
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color:#FFCC01 ;
+    border: 1px solid #414141;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1.5px solid #414141;
+    color: #414141;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active
+ {
+    background-color: white;
+    color: black;
+}
+
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit] {
+    background-color:#FFCC01 ;
+    border: 1px solid;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active,
+input[type=submit] {
+    border: 1px solid #414141;
+    background-color: rgb(168, 167, 167);
+    color:white;
+}
+
+
+/* -------------------------*/
+/* HEADER*/
+/* ------------------------------*/
+
+
+
+
+
+header {
+    width:100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(img/bezmene.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+header .milan-img {
+    position: absolute;
+    width: 400px;
+    left: 47%;
+    margin-top: -70px;
+}
+
+header .milan-img .img-wrapper {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: calc(100% - 95px);
+    height: 85%;
+    background-color: #afafaf;
+}
+
+header .milan-img .img-wrapper .left-box {
+    position: absolute;
+    left: -25px;
+    background: #FFCC01;
+    width: 50px;
+    height: 100px;
+}
+
+header .milan-img .img-wrapper .right-box {
+    position: absolute;
+    right: -25px;
+    bottom: 100px;
+    background: #FFCC01;
+    width: 50px;
+    height: 150px;
+}
+
+header .milan-img img {
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -60%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 25px;
+    margin-left: -145px;
+    opacity: 75%;
+}
+
+.main-nav {
+    background-color:#414141;
+    
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    
+
+}
+
+.main-nav li {
+    
+    display: inline-block;
+    margin-left: 66px;
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited
+ {
+    padding: 8px 0px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom:2px solid transparent;
+    transition: border-bottom 0.2s opacity 0.7s font-size 1s;
+    opacity: 80%;
+    background-color:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0)) ;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom:2px solid #E2A83C;
+    opacity: 100%;
+    font-size: 92%;
+    
+}
+
+/*------- Skills------*/
+
+
+.container-skillbar h4{
+    color: #414141;
+    padding-bottom:30px;
+  }
+  .container-skillbar {
+          width:150%;
+          padding:20px 100px 60px 100px;
+          height:auto;
+          overflow:none;
+      background: none;
+       }
+  .skillbar {
+           position:relative;
+          display:block;
+          margin-bottom:15px;
+           width:auto;
+          background:#efefef;
+          height:30px;
+          border-radius:0spx;
+          -moz-border-radius:0px;
+          -webkit-border-radius:0px;
+          -webkit-transition:0.4s linear;
+          -moz-transition:0.4s linear;
+          -ms-transition:0.4s linear;
+          -o-transition:0.4s linear;
+          transition:0.4s linear;
+          -webkit-transition-property:width, background-color;
+          -moz-transition-property:width, background-color;
+          -ms-transition-property:width, background-color;
+          -o-transition-property:width, background-color;
+          transition-property:width, background-color;
+      }
+  
+      .skillbar-title {
+          position:absolute;
+          top:0;
+          left:0;
+          width:110px;
+          font-weight:bold;
+          font-size:13px;
+          color:#fff;
+          background:#6adcfa;
+          -webkit-border-top-left-radius:0px;
+          -webkit-border-bottom-left-radius:0px;
+          -moz-border-radius-topleft:0px;
+          -moz-border-radius-bottomleft:0px;
+          border-top-left-radius:0px;
+          border-bottom-left-radius:0px;
+      }
+  
+      .skillbar-title span {
+          display:block;
+          background:rgba(0, 0, 0, 0.15);
+          padding:0 20px;
+          height:30px;
+          line-height:30px;
+          -webkit-border-top-left-radius:0px;
+          -webkit-border-bottom-left-radius:0px;
+          -moz-border-radius-topleft:0px;
+          -moz-border-radius-bottomleft:0px;
+          border-top-left-radius:0px;
+          border-bottom-left-radius:0px;
+      }
+  
+      .skillbar-bar {
+          height:30px;
+          width:0px;
+          border-radius:0px;
+          -moz-border-radius:0px;
+          -webkit-border-radius:0px;
+      }
+  
+      .skill-bar-percent {
+          position:absolute;
+          right:10px;
+          top:0;
+          font-size:11px;
+          height:30px;
+          line-height:30px;
+          color:#ffffff;
+          color:rgba(0, 0, 0, 0.5);
+      }
+
+
+ section {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(img/aboutme.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+ }     
+
+
+
+
+ /*---------
+ CONTACT FORM ------- */
+.contact-form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    max-width: 620px;
+}
+
+.contact-form .row {
+    margin-bottom: 30px;
+}
+
+.section-form {
+    background-image: url(img/contact.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+ 
+
+ input[type=text],
+ input[type=email],
+ select,
+ textarea {
+     width: 100%;
+     padding: 7px;
+     
+     border: 1px solid ;
+
+ }
+
+ textarea {
+     height: 80%;
+
+    
+ }
+
+ *:focus {outline: none}
+
+
+ /*-------Dropdown Button---------*/
+ .dropbtn {
+    background-color: white;
+    border: 1px solid #414141;
+    color: black;
+    padding: 10px 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+   
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #FFCC01;
+      color: black;
+    }
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover
+  .dropbtn:hover,
+  .dropbtn:active
+  input[type=submit]:hover,
+  input[type=submit]:active
+   {
+      background-color: white;
+      color: black;
+  }
+ 
+ 
+ 
+ 
